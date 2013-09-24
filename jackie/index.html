@@ -1,0 +1,151 @@
+<! DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+<head>
+	<title>hi</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="stylesheet" type="text/css" href="assets/css/nonresponsivene.css"/> -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	
+	<style type = "text/css">
+ 	* {
+ 		margin: 0;
+ 		padding: 0;
+ 	}
+	body {
+		
+
+	}
+	h1, h2, h3, h4, b {
+		font-weight: 300;
+		
+	}
+
+
+	.banner { 
+		position: relative; 
+		overflow: auto; 
+		margin: 0 auto;
+		
+	}
+	.banner li { 
+		list-style: none; 
+
+	}
+	.banner ul li { 
+		float: left; 
+		height: 400px;
+
+
+
+	}
+	.banner h1{
+		color: #000;
+		font-size: 300%;
+		text-align: center;
+	}
+	.banner .dots {
+		text-align: center;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 20px;
+	}
+	.banner .dots li {
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		margin: 0 4px;
+
+		text-indent: -999em;
+
+		border: 2px solid #fff;
+		border-radius: 6px;
+
+		cursor: pointer;
+		opacity: .4;
+
+		-webkit-transition: background .5s, opacity .5s;
+		-moz-transition: background .5s, opacity .5s;
+		transition: background .5s, opacity .5s;
+	}
+	.banner .dots li.active {
+		background: #fff;
+		opacity: 1;
+	}
+
+	</style>
+</head>
+
+<body>
+	<!-- Fixed navbar -->
+	<div class="navbar navbar-default navbar-static-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.php"><strong>USTogether</strong></a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<!-- left side -->
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="">Login</a></li>
+					<li class="active"><a href="#">Sign up</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Contact</a></li>
+							<li><a href="#">Team</a></li>
+							<li class="divider"></li>
+							<li><a href="#">About Us</a></li>
+
+                <!-- <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li> -->
+            </ul>
+        </li>
+    </ul>
+</div><!--/.nav-collapse -->
+</div>
+</div>
+
+
+<div class="banner">
+	<ul>
+		<li style="background-image: url(slider.img/banner4%281%29.jpg)"><h1>Welcome to USTogether</h1></li>
+		<li style="background-image: url(slider.img/c6b018b6-67d1-4b67-922b-f508668f21cc.JPG)"><h1>Find group and join!</h1></li>
+		<li style="background-image: url(slider.img/Raining-Scene-%40-HKUST.jpg)"><h1>Enjoy the school life.</h1></li>
+	</ul>
+</div>
+
+
+
+
+
+
+<!-- script -->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="http://unslider.com/unslider.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+ <script>
+
+$(function() {
+	$('.banner').unslider({
+	speed: 500,               //  The speed to animate each slide (in milliseconds)
+	delay: 5000,              //  The delay between slide animations (in milliseconds)
+	complete: function() {},  //  A function that gets called after every slide animation
+	keys: true,               //  Enable keyboard (left, right) arrow shortcuts
+	dots: true,               //  Display dot navigation
+	fluid: true              //  Support responsive design. May break non-responsive designs
+});
+});
+ </script>
+
+<!-- script -->
+</body>
+</html> 
